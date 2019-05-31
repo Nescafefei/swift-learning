@@ -12,6 +12,10 @@
 		1527D6BC229FD45800696A1F /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527D6BB229FD45800696A1F /* UICollectionView+Ext.swift */; };
 		158952B6229795300031E691 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158952B5229795300031E691 /* Const.swift */; };
 		158952B82297A0C60031E691 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158952B72297A0C60031E691 /* UIColor+Ext.swift */; };
+		15A235CB22A0D95F00E25180 /* MyConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A235C922A0D95F00E25180 /* MyConcernCollectionViewCell.swift */; };
+		15A235CC22A0D95F00E25180 /* MyConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A235CA22A0D95F00E25180 /* MyConcernCollectionViewCell.xib */; };
+		15A235CE22A1291700E25180 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A235CD22A1291700E25180 /* NoLoginHeaderView.swift */; };
+		15A235D022A1293A00E25180 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A235CF22A1293A00E25180 /* NoLoginHeaderView.xib */; };
 		15AFD2232296386400C98DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFD2222296386400C98DB9 /* AppDelegate.swift */; };
 		15AFD2252296386400C98DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AFD2242296386400C98DB9 /* ViewController.swift */; };
 		15AFD2282296386400C98DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AFD2262296386400C98DB9 /* Main.storyboard */; };
@@ -58,6 +62,10 @@
 		1527D6BB229FD45800696A1F /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		158952B5229795300031E691 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		158952B72297A0C60031E691 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		15A235C922A0D95F00E25180 /* MyConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCollectionViewCell.swift; sourceTree = "<group>"; };
+		15A235CA22A0D95F00E25180 /* MyConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		15A235CD22A1291700E25180 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		15A235CF22A1293A00E25180 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		15AFD21F2296386400C98DB9 /* swiftPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AFD2222296386400C98DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15AFD2242296386400C98DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -337,6 +345,10 @@
 				15D61BA0229E8557001ED6FE /* MyOtherCell.xib */,
 				15D61BA3229E9070001ED6FE /* MyConcernCell.swift */,
 				15D61BA4229E9070001ED6FE /* MyConcernCell.xib */,
+				15A235C922A0D95F00E25180 /* MyConcernCollectionViewCell.swift */,
+				15A235CA22A0D95F00E25180 /* MyConcernCollectionViewCell.xib */,
+				15A235CD22A1291700E25180 /* NoLoginHeaderView.swift */,
+				15A235CF22A1293A00E25180 /* NoLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -492,8 +504,10 @@
 				15D61BA2229E8557001ED6FE /* MyOtherCell.xib in Resources */,
 				15D61BA6229E9070001ED6FE /* MyConcernCell.xib in Resources */,
 				15AFD22D2296386600C98DB9 /* LaunchScreen.storyboard in Resources */,
+				15A235CC22A0D95F00E25180 /* MyConcernCollectionViewCell.xib in Resources */,
 				15AFD22A2296386600C98DB9 /* Assets.xcassets in Resources */,
 				15AFD2282296386400C98DB9 /* Main.storyboard in Resources */,
+				15A235D022A1293A00E25180 /* NoLoginHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +539,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-swiftPro/Pods-swiftPro-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -533,6 +549,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +594,8 @@
 				1527D6BA229FD35F00696A1F /* UITabView+Ext.swift in Sources */,
 				15AFD26F229649C800C98DB9 /* VideoViewController.swift in Sources */,
 				15AFD2232296386400C98DB9 /* AppDelegate.swift in Sources */,
+				15A235CB22A0D95F00E25180 /* MyConcernCollectionViewCell.swift in Sources */,
+				15A235CE22A1291700E25180 /* NoLoginHeaderView.swift in Sources */,
 				15D61BA5229E9070001ED6FE /* MyConcernCell.swift in Sources */,
 				158952B82297A0C60031E691 /* UIColor+Ext.swift in Sources */,
 				15AFD26D229649A800C98DB9 /* HuoshanViewController.swift in Sources */,

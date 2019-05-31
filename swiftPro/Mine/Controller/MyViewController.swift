@@ -89,11 +89,18 @@ extension MyViewController{
             /** l扩展写法*/
             let cell = tableView.ym_dequeueReusableCell(indexPath: indexPath) as MyConcernCell
             
-            /** 系统写法*/
-//            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MyConcernCell.self))as!MyConcernCell
             let model = self.dataArr[indexPath.section][indexPath.row]
-            cell.titlelab?.text = model.text
-            cell.rightLab.text = model.grey_text
+            cell.mycellModel = model
+     
+            if concernsArr.count <= 1{
+                cell.collectionView.isHidden = true
+            }
+            if concernsArr.count == 1 {
+                cell.concernModel = concernsArr[0]
+            }
+            if concernsArr.count > 1{
+                cell.myConcernsArr = concernsArr
+            }
 
             return cell
         }

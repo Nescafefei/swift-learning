@@ -8,5 +8,6 @@ target 'swiftPro' do
   pod 'HandyJSON'
   pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.0'
-  
+  pod 'Kingfisher'
+  pod 'IBAnimatable'
 end

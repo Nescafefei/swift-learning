@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sCQ-Bi-B8P">
+            <rect key="frame" x="0.0" y="0.0" width="670" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="pXM-lf-RlB">
+                    <rect key="frame" x="0.0" y="0.0" width="670" height="260"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="la" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHh-eo-YnE">
+                    <rect key="frame" x="0.0" y="190" width="670" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fc9-Gy-BrZ">
+                            <rect key="frame" x="0.0" y="0.0" width="223.5" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="-25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="收藏" image="favoriteicon_profile_24x24_">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2L-kb-VL5">
+                            <rect key="frame" x="223.5" y="0.0" width="223" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="-25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="历史" image="history_profile_24x24_">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2i-8V-GIZ">
+                            <rect key="frame" x="446.5" y="0.0" width="223.5" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-25" minY="25" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="30" minY="-25" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="夜间" image="nighticon_profile_24x24_">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="d2i-8V-GIZ" firstAttribute="top" secondItem="gHh-eo-YnE" secondAttribute="top" id="0S6-Nf-YTy"/>
+                        <constraint firstItem="A2L-kb-VL5" firstAttribute="leading" secondItem="fc9-Gy-BrZ" secondAttribute="trailing" id="2Tk-x8-s0v"/>
+                        <constraint firstAttribute="bottom" secondItem="d2i-8V-GIZ" secondAttribute="bottom" id="8xq-bl-hUU"/>
+                        <constraint firstItem="fc9-Gy-BrZ" firstAttribute="leading" secondItem="gHh-eo-YnE" secondAttribute="leading" id="C6T-mY-Gnc"/>
+                        <constraint firstItem="A2L-kb-VL5" firstAttribute="centerX" secondItem="gHh-eo-YnE" secondAttribute="centerX" id="Gds-Mi-w10"/>
+                        <constraint firstItem="fc9-Gy-BrZ" firstAttribute="top" secondItem="gHh-eo-YnE" secondAttribute="top" id="JNP-43-9U2"/>
+                        <constraint firstAttribute="bottom" secondItem="A2L-kb-VL5" secondAttribute="bottom" id="MBF-3p-XmZ"/>
+                        <constraint firstAttribute="trailing" secondItem="d2i-8V-GIZ" secondAttribute="trailing" id="QIc-7u-8RO"/>
+                        <constraint firstItem="A2L-kb-VL5" firstAttribute="width" secondItem="fc9-Gy-BrZ" secondAttribute="width" id="VGm-MJ-tFp"/>
+                        <constraint firstItem="d2i-8V-GIZ" firstAttribute="leading" secondItem="A2L-kb-VL5" secondAttribute="trailing" id="cL3-d6-HCl"/>
+                        <constraint firstItem="d2i-8V-GIZ" firstAttribute="width" secondItem="fc9-Gy-BrZ" secondAttribute="width" id="hzg-J1-SAe"/>
+                        <constraint firstAttribute="bottom" secondItem="fc9-Gy-BrZ" secondAttribute="bottom" id="nxA-dS-QHu"/>
+                        <constraint firstAttribute="height" constant="70" id="qdI-1d-0DX"/>
+                        <constraint firstItem="A2L-kb-VL5" firstAttribute="top" secondItem="gHh-eo-YnE" secondAttribute="top" id="x5P-tZ-ZcP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyX-t6-k7L" customClass="AnimatableButton" customModule="IBAnimatable">
+                    <rect key="frame" x="272.5" y="142" width="125" height="28"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="47w-ty-rmH"/>
+                        <constraint firstAttribute="height" constant="28" id="Zf9-cx-Elx"/>
+                    </constraints>
+                    <state key="normal" title="更多登录方式 &gt;">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="4HB-bv-ow6">
+                    <rect key="frame" x="85" y="37" width="489" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSx-zw-3LO">
+                            <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cB-q7-TWY">
+                            <rect key="frame" x="141" y="0.0" width="66" height="66"/>
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yp-Ly-vol">
+                            <rect key="frame" x="282" y="0.0" width="66" height="66"/>
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeB-FU-N5F">
+                            <rect key="frame" x="423" y="0.0" width="66" height="66"/>
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gHh-eo-YnE" firstAttribute="top" secondItem="fyX-t6-k7L" secondAttribute="bottom" constant="20" id="0Yd-Ue-16G"/>
+                <constraint firstAttribute="bottom" secondItem="pXM-lf-RlB" secondAttribute="bottom" id="EFA-i8-oJt"/>
+                <constraint firstItem="pXM-lf-RlB" firstAttribute="leading" secondItem="8yR-tr-GM2" secondAttribute="leading" id="HLj-CM-QqE"/>
+                <constraint firstItem="gHh-eo-YnE" firstAttribute="trailing" secondItem="8yR-tr-GM2" secondAttribute="trailing" id="fr3-vh-Wqd"/>
+                <constraint firstAttribute="bottom" secondItem="gHh-eo-YnE" secondAttribute="bottom" id="jv2-C5-AiI"/>
+                <constraint firstItem="pXM-lf-RlB" firstAttribute="top" secondItem="sCQ-Bi-B8P" secondAttribute="top" id="kDr-9Y-qp9"/>
+                <constraint firstItem="gHh-eo-YnE" firstAttribute="leading" secondItem="8yR-tr-GM2" secondAttribute="leading" id="lnv-RE-8h6"/>
+                <constraint firstItem="pXM-lf-RlB" firstAttribute="trailing" secondItem="8yR-tr-GM2" secondAttribute="trailing" id="rkj-4S-4Q7"/>
+                <constraint firstItem="fyX-t6-k7L" firstAttribute="centerX" secondItem="sCQ-Bi-B8P" secondAttribute="centerX" id="tfO-RL-A7u"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8yR-tr-GM2"/>
+            <point key="canvasLocation" x="285.50724637681162" y="-634.15178571428567"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cellphoneicon_login_profile_66x66_" width="66" height="66"/>
+        <image name="favoriteicon_profile_24x24_" width="24" height="24"/>
+        <image name="history_profile_24x24_" width="24" height="24"/>
+        <image name="nighticon_profile_24x24_" width="24" height="24"/>
+        <image name="wallpaper_profile_night" width="320" height="180"/>
+    </resources>
+</document>
