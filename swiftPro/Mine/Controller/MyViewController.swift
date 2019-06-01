@@ -14,10 +14,19 @@ class MyViewController: UITableViewController {
     var dataArr = [[MyCellModel]]()
     var concernsArr = [MyConcern]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.tableHeaderView = headerView
         tableView.tableFooterView = UIView()
         tableView.backgroundColor = UIColor.globaBackgroundColor()
         tableView.rowHeight = 44
@@ -54,8 +63,16 @@ class MyViewController: UITableViewController {
         }
     }
     
+    // 懒加载
+    fileprivate lazy var headerView : NoLoginHeaderView = {
+        let nologinView = NoLoginHeaderView.headerView()
+        return nologinView
+    }()
     
-
+    // z状态栏颜色
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     
 }
 
@@ -115,5 +132,18 @@ extension MyViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0{
+            let totalOffset = kMyHeaderHeight + abs(offsetY)
+            let f = totalOffset / kMyHeaderHeight
+            headerView.bgImageView.frame = CGRect(x: -screenWidth*(f-1)*0.5, y: offsetY, width: screenWidth * f, height: totalOffset)
+            
+        }
+        
+    }
+
+    
     
 }
